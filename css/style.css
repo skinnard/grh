@@ -561,7 +561,38 @@ body.enlarged {
 
 .dash-footer {
   bottom: 0;
-  padding: 19px 15px 20px;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1; }
+
+.no-background {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1; }
+
+.particles-background {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/beach.jpg) no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1; }
+
+.right-section {
   position: absolute;
   right: 0;
   color: #98a6ad;
@@ -580,7 +611,477 @@ body.enlarged {
 .footer-alt {
   left: 0 !important;
   text-align: center;
-  background-color: transparent;
+  padding: 200px 5% 0; }
+
+.intro-personal .intro-text h1 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: 1.2; }
+
+.intro-personal .intro-text h3 {
+  font-family: Work Sans;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: 1.2; }
+
+.btn-contact {
+  font-family: Work Sans;
+  font-size: 18px;
+  font-weight: 600;
+  color: #001CFF;
+  display: inline-block;
+  text-transform: uppercase;
+  background: transparent;
+  border: 3px solid;
+  border-color: #001CFF;
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  -webkit-transform: 0.5s;
+  -moz-transform: 0.5s;
+  transition: 0.5s; }
+
+.btn-contact:hover, .btn-contact:focus {
+  color: #FFFFFF;
+  background: #001CFF;
+  border-color: #001CFF;
+  text-decoration: none; }
+
+/* ----- About Page Style Starts ----- */
+.split-about {
+  padding-top: 150px; }
+
+.split-about-details {
+  padding: 40px; }
+
+.split-about .split-about-details h4 {
+  display: inline;
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  float: left;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #222222;
+  padding: 2px 4px;
+  line-height: 1.2; }
+
+.split-about .split-about-details h1 {
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin: 50px 0 10px 0; }
+
+.split-about .split-about-details h2 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  letter-spacing: -1px;
+  line-height: 1.3;
+  margin: 50px 0 0 0; }
+
+.split-about .split-about-details .btn-contact {
+  margin-top: 20px;
+  padding: 6px 12px; }
+
+.split-about .split-about-details span {
+  font-family: Poppins;
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.2; }
+
+.split-about .split-about-details p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.2;
+  margin: 20px 0 10px 0; }
+
+.split-about-experience {
+  padding-top: 50px; }
+
+.split-about-experience h2 {
+  display: inline;
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  float: left;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #222222;
+  padding: 2px 4px;
+  line-height: 1.2; }
+
+.split-about-experience ul {
+  padding: 50px 0 0 0; }
+
+.split-about-experience li {
+  margin-bottom: 1em; }
+
+.split-about-experience h3 {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: 0px;
+  line-height: 1.2; }
+
+.split-about-experience p {
+  font-family: Work Sans;
+  font-size: 14px !important;
+  font-weight: 300;
+  color: #888DA1;
+  padding: 0 0 10px 0;
+  line-height: 1.1; }
+
+.split-about-experience h6 {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 400;
+  color: #222222;
+  padding: 0 0 10px 0;
+  letter-spacing: 1px; }
+
+/* ----- About Page Style Ends ----- */
+/* --------------------------------------------------
+------- Portfolio Split Layout Styling Starts -------
+---------------------------------------------------*/
+.portfolio-split {
+  padding-top: 150px;
+  text-align: left; }
+
+.portfolio-split .portfolio-intro {
+  padding: 2em; }
+
+.portfolio-split .portfolio-intro span {
+  font-family: Poppins;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #FFF;
+  letter-spacing: 1px;
+  padding: 2px 4px;
+  background: #222222; }
+
+.portfolio-split .portfolio-intro h1 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 40px 0 0 0; }
+
+.portfolio-split .portfolio-split-items {
+  padding-top: 50px;
+  padding-bottom: 20px; }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s; }
+
+.overlay-items {
+  height: 300px;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0; }
+
+.overlay-items h5 {
+  font-family: Poppins;
+  display: block;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  transition: 0.3s;
+  transition-delay: 0.1s;
+  opacity: 0; }
+
+.overlay-items p {
+  margin-top: 0em;
+  opacity: 0;
+  font-size: 12px;
+  font-family: Poppins;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #111111;
+  padding: 5px 5px;
+  background: #FFF;
+  display: inline-block;
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  transition: 0.3s;
+  transition-delay: 0.2s; }
+
+.grid img {
+  overflow: hidden;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s; }
+
+.grid a:hover .overlay {
+  opacity: 1;
+  visibility: visible; }
+
+.grid a:hover h5, .grid a:hover p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  text-decoration: none; }
+
+/* --------------------------------------------------
+-------- Portfolio Split Layout Styling Ends --------
+---------------------------------------------------*/
+/* ----------------------------------------------------
+----------- Portfolio Filter Styling Starts -----------
+-----------------------------------------------------*/
+.primal-portfolio {
+  padding-left: 35px;
+  padding-right: 35px; }
+
+.primal-portfolio nav {
+  padding-bottom: 30px;
+  text-align: left; }
+
+.primal-portfolio .categories ul li {
+  display: inline;
+  list-style: none; }
+
+.primal-portfolio .categories ul li a {
+  display: inline;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.5;
+  text-decoration: none;
+  color: #666666;
+  margin-left: 20px; }
+
+.primal-portfolio .categories ul li a.active {
+  text-decoration: line-through;
+  color: #000000; }
+
+.primal-portfolio_filter {
+  padding-left: 0; }
+
+.primal-portfolio_item {
+  overflow: hidden;
+  margin-bottom: 10px;
+  display: block; }
+
+.primal-portfolio-overlay {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  left: 5px;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  opacity: 0;
+  transition: 0.5s; }
+
+.primal-overlay-items {
+  height: 300px;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0; }
+
+.primal-overlay-items p {
+  margin-top: 1em;
+  opacity: 0;
+  font-size: 12px;
+  font-family: Poppins;
+  letter-spacing: 2px;
+  color: #111111;
+  padding: 5px 5px;
+  background: #FFFFFF;
+  display: inline-block;
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  transition: 0.3s;
+  transition-delay: 0.2s; }
+
+.primal-portfolio_item:focus, .primal-portfolio_item:hover {
+  text-decoration: none; }
+
+.primal-portfolio_item:hover .primal-portfolio-overlay {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1; }
+
+.primal-portfolio_item:hover h5, .primal-portfolio_item:hover p {
+  opacity: 1; }
+
+.primal-portfolio_item:hover p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  text-decoration: none; }
+
+/* ----- Portfolio Filter Styling Ends ----- */
+/* ----- Portfolio Single Style Starts ----- */
+.portfolio-single {
+  padding-top: 100px;
+  text-align: center; }
+
+.portfolio-single .project-details {
+  padding: 40px; }
+
+.portfolio-single .project-details h4 {
+  display: inline;
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  float: left;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #222222;
+  padding: 2px 4px;
+  line-height: 1.2; }
+
+.portfolio-single .project-details h1 {
+  font-family: Poppins;
+  font-size: 34px;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin: 50px 0 20px 0; }
+
+.portfolio-single .project-details p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0px;
+  line-height: 1.4; }
+
+.project-images {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.project-images img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.project-details ul {
+  list-style-type: none;
+  text-align: left;
+  padding-top: 40px; }
+
+.project-details span {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 1px;
+  color: #FFF;
+  background: #222222;
+  padding: 2px 4px;
+  text-transform: uppercase; }
+
+.portfolio-single .project-sub-details p {
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: 0px; }
+
+.portfolio-single .project-sub-details a {
+  font-family: Work Sans;
+  color: #001CFF; }
+
+.portfolio-single .project-sub-details a:hover {
+  font-family: Work Sans;
+  color: #FF3333;
+  text-decoration: none; }
+
+.link-back {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden; }
+
+.link-back i {
+  font-size: 34px;
+  color: #111111; }
+
+/* ----- Portfolio Single Style Ends ----- */
+/* ----- Contact Page Styling Starts ----- */
+.split-contact {
+  padding-top: 100px; }
+
+.split-contact .split-contact-intro {
+  padding: 40px;
+  text-align: left; }
+
+.split-contact .split-contact-intro h4 {
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  display: inline;
+  letter-spacing: 1px;
+  color: #FFF;
+  background: #222222;
+  padding: 2px 4px;
+  text-transform: uppercase; }
+
+.split-contact-intro h1 {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  margin: 20px 0 20px 0; }
+
+.split-form {
+  padding-top: 50px;
+  text-align: left; }
+
+/* ----- Form Styling Starts ----- */
+label {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #111111; }
+
+.controls input {
+  font-family: Poppins;
+  color: #888DA1; }
+
+.form-control {
+  border: 0px;
+  border-radius: 0px;
+  margin-top: 10px;
+  background: transparent;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #999;
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+  transition: 0.5s; }
+
+.form-control:focus {
+  border-color: #222222;
   box-shadow: none; }
 
 @media (max-width: 767.98px) {

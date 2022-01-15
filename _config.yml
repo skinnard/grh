@@ -1,17 +1,7 @@
-name: VIDEO SNIPER PRO
-title: VIDEO SNIPER PRO
+name: Glen Hodges
+title: Glen Hodges
 
 highlighter: rouge
-
-exclude: 
-  - node_modules
-  - gulpfile.js
-  - package.json
-  - .editorconfig
-  - .gitignore
-  - "package-lock.json"
-
-about: 
-
-plugins:
-  - jekyll-inline-svg
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+url: https://glenhodgesweb.ninja
+about: I&rsquo;m a front-end developer and designer with a wide skillset ranging from coding to animation to fine art. My education is in media and fine arts. I&rsquo;m a self taught coder with a passion for learning new skills, software and practices. If you&rsquo;re looking for someone who can jump between disclipines and has a keen eye for pixel perfect visuals, then I&rsquo;m your guy!

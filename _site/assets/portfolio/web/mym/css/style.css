@@ -1,0 +1,763 @@
+/* 
+
+©2014 Mind Your Manners Dog Walking
+Site Created by Glen Hodges
+
+
+
+/************************************************************
+GENERAL
+************************************************************/
+
+body {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 100;
+	font-size: 1.125em;
+	color: #000;
+	background: #eaeaea;
+	background-image: url('../img/bg.png');
+}
+a {
+	color: #b4c34f;
+	text-decoration: none;
+}
+img, object { max-width: 100%; }
+
+.wrapper {
+	background-image: url('img/bg.png');
+	background: white;
+	width: 95%;
+	margin: auto;
+	margin-top: 20px;
+	z-index: 1;
+	max-width: 1000px;
+	position: relative;
+}
+
+p { color:#878787; }
+
+
+
+/************************************************************
+HEADER
+************************************************************/
+
+#logo {
+	width: 120px;
+	position: absolute;
+	margin-left: 3%;
+}
+a.svg:after {
+	 content: ""; 
+	 position: absolute; 
+	 top: 0; 
+	 right: 0; 
+	 bottom: 0; 
+	 left: 0;
+}
+a.svg {
+	position: relative;
+	display: inline-block;
+}
+#header-img div {
+	width: 100%;
+	display: block;
+}
+.container {
+	z-index: 100;
+	width: 100%;
+}
+.header p { position: absolute;}
+
+
+
+
+/************************************************************
+TYPOGRAPHY
+************************************************************/
+
+h1 {
+	font-size: 1.750em;
+	font-weight: 100;
+	letter-spacing: -1.5px;
+}
+h2 {
+	font-weight: 100;
+	font-size: 1.500em;
+	font-size: 2.5em;
+	color: #b4c34f;
+}
+h2.dark_title { color: #444444; }
+h3 {
+	font-weight: 100;
+	font-size: 1.125em;
+	color: #878787;
+}
+
+
+
+/************************************************************
+BUTTONS
+************************************************************/
+
+.btn {
+	padding: 15px 30px;
+	margin: 0;
+	color: #fff;
+	background-color: #ff6347;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	text-transform: uppercase;
+	float: left;
+}
+.btn-contact a, .btn-contact {
+	padding: 10px 30px;
+	background-color: #ff6347; 
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	text-transform: uppercase;
+	width: 100%;
+	margin-bottom: 20px;
+	color: #FFF;
+}
+
+
+
+/************************************************************
+NAVIGATION
+************************************************************/
+
+
+#nav {
+	width: 100%;
+	float: right;
+}
+#nav li {
+	list-style: none;
+	float: right;
+	margin-top: 60px;
+}
+#nav li a { display: block; }
+
+#nav li a:hover { color: #ff6347; }
+
+#nav li ul li {
+    float: none;
+    padding: 3px;
+    margin-top: 0px;
+}
+#nav li ul {
+    position: absolute;
+	display: none; 
+	z-index: 999;
+	margin: 0 0px 0 -30px;
+	padding: 20px;
+	background-color: white;
+	color: #ff6347;
+	border-radius: 5px;
+	text-align: center;
+}
+#nav li:hover ul {
+    position: absolute;
+    display: block;
+    z-index: 999;
+}
+#nav li.about { padding-top: 12px; }
+
+.list {
+	float: left;
+	margin-right: 40px;	
+	padding-top: 12px;
+}
+li.contact.btn {
+	margin: 0;
+	color: #FFF;
+}
+li.about a { color: #878787; }
+
+li.services a { color: #878787; }
+
+li.our_team a {
+	color: #878787;
+	margin-right: 175px;
+}
+.contact a { color: #FFF; }
+
+#contact_div {
+	position: absolute;
+	margin: 75px 0 0 0;
+	z-index: 300;
+	right: 35px;
+}
+.facebook {
+	background: url('../img/facebook.svg') no-repeat;
+	width: 32px;
+	height: 32px;
+	margin-bottom: -10px;
+}
+
+
+
+
+/************************************************************
+CONTENT
+************************************************************/
+
+#intro {
+	margin: 30px 0 5% 10%;
+	text-align: center;		
+	color: #444444;
+}
+#intro h1 { 
+	font-size: 1.5em; 
+	text-align: left;
+}
+
+#walkers { margin: 0 2% 1% 5%; } 
+#walkers img {
+	height: 100%;
+	margin-top: 40px;
+	width: 100%;
+}
+#walkers p {
+	text-align: center;
+	color: #878787;
+}
+#content_logos div { float: left; }
+
+#content_logos {    
+	padding: 3% 0 10%;
+	border-top: 1px solid #c6c6c6;	
+	color: #878787;
+	width: 90%;
+	margin: 0 5% 0;
+}
+
+p.logo_txt {
+	text-align: center;
+	margin: 0;
+} 
+
+#group_walks, #puppy_visits, #boarding {
+	height: 20%;
+	width: 20%;
+	margin-left: 10%;
+}
+
+#group_walks:hover, 
+#puppy_visits:hover, 
+#boarding:hover, 
+p.logo_txt:hover {
+	opacity: .8;
+}	
+#bottom_text { text-align: center; }
+
+#contact span{ color: #ff6347; }
+
+#copyright {
+	border-top: 8px solid #676767;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	background-color: #878787;
+	height: 5%;
+}
+#copyright p {
+	padding: 5% 0 5%;
+	color: #FFF;
+}
+
+
+
+
+/************************************************************
+PAGES
+************************************************************/
+
+/* ------------------- About --------------------*/
+
+#bottom_info {
+	text-align: center;
+	margin-top: 100px;
+}
+.text {
+	margin: 30px 10% 0;
+	width: 80%;
+	float: none;
+	text-align: center;
+}
+h2 {
+	font-size: 2em;
+}
+#contact_btn {
+	margin: 10px 38% 30px;
+	display: inline;
+}
+#about_logo {
+	width: 25%;
+	display: block;
+	margin: 60px auto 100px;
+}
+ 
+
+
+/* ------------------- Our Team --------------------*/
+
+#left {
+	float: left;
+	width: 45%;
+}
+#right {
+	float: right;
+	width: 45%;
+}
+.danielle_text p {
+	text-align: center;
+	margin: 0 0 100px 20%;
+}
+.dan_img img {
+	padding-left: 20%;
+	max-width: 100%;
+}
+.kimmy_img img { max-width: 100%; }
+
+.kimmy_text p {
+	text-align: center;
+	margin: 0 20% 0 0;
+}
+
+#title { margin: 30px 15% 30px 20%; }
+
+/* ------------------- Sevices --------------------*/
+
+ #services_txt,  #services_txt h2 {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+#circle_logos {    
+	padding: 3% 0 10%;
+	border-top: 1px solid #c6c6c6;	
+	color: #878787;
+	width: 90%;
+	margin: 0 5% 0;
+}
+
+#circle_logos div { float: left; }
+
+.services_logos{
+	width: 30%;
+	display: block;
+	margin: 40px auto;
+}
+#group_txt {
+	margin: 0 0 5% 0;
+	text-align: left;		
+	color: #444444;
+}
+#group_txt h1, #group_txt h3 {
+	margin: 30px auto 0;
+	display: block;
+	width: 70%;
+	text-align: center;
+}
+#group_txt h3 span { color: #ff6347; }
+
+.logo_holder {
+	width: 30%;
+	margin: 40px auto;
+}
+
+/*----------------Contact Page------------------*/
+
+#hidden_txt { display: none; }
+
+.thanks { text-align: center; }
+
+.thanks h1 { color: #878787; }
+
+.thanks p { padding-bottom: 80px; }
+
+
+/************************************************************
+MEDIA QUERIES
+************************************************************/
+
+/* ------------------- Larger ------------------- */
+
+@media screen and (max-width: 1024px) {
+
+	#logo { width: 110px; }
+
+	#nav {
+		width: 100%;
+		float: right;
+	}
+	#nav ul {
+		list-style: none;
+		float: right;
+		margin: 60px 1px 0 0;
+	}
+	#nav ul li {
+		float: left;
+		margin-right: 10px;
+		padding-top: 12px;
+		width: 5em;
+	}
+	#nav ul.about {
+		padding-top: 10px;
+	}
+	li.contact.btn {
+		margin: 0;
+		color: #FFF;
+	}
+	li.about a {
+		color: #878787;
+		margin-top: 2px;
+	}
+	li.services a {
+		color: #878787;
+		margin-right: 0;
+	}
+	li.contact a {
+		color: #FFF;
+	}
+	li.our_team a {
+		color: #878787;
+		margin-right: 120px;
+	}
+	#intro {
+		width: 70%;
+		text-align: center; 
+		margin: 30px 15% 10%;
+	}
+	#intro h1 {
+		text-align: center;
+	}
+	#walkers {
+		display: none;
+	}
+	menu, ol, ul { padding: 0 0 0 0; }
+
+	.btn-contact a, .btn-contact {
+		padding: 5px 20px;
+		background-color: #ff6347; 
+		border-radius: 25px;
+		-webkit-border-radius: 25px;
+		-moz-border-radius: 25px;
+		text-transform: uppercase;
+		width: 100%;
+		margin-bottom: 20px;
+		color: #FFF;
+	}
+	#contact_div {
+		position: absolute;
+		margin: 80px 0 0 0;
+		z-index: 300;
+		right: 20px;
+	}
+	.btn {
+		float: none;
+	}
+	
+
+	/*---------------------Our Team Page----------------------*/
+
+	h2.dark_title { text-align: center; }
+
+	.dan_img { width:100%; }
+
+	#left {
+		float: none;
+		max-width: 100%;
+		width: 100%;
+	}
+	#right {
+		float: none;
+		max-width: 100%;
+		width: 100%;
+	}
+	.dan_img img {
+		padding: 0%;
+		margin: 0 auto;
+		display: block;
+	}
+	.danielle_text p {
+		display: block;
+		text-align: left;
+		margin: 0 10% 30px;
+		font-size: .75em;
+	}
+	.kimmy_img img {
+		padding: 0%;
+		margin: 0 auto;
+		display: block;
+	}
+	.kimmy_text p {
+		display: block;
+		text-align: left;
+		margin: 0 10% 30px;
+		font-size: .75em;
+	}
+
+	#title { margin: 30px auto 30px; }
+
+
+
+} /*End of Large Screen Media Query*/
+
+
+/* --------------------------- Smaller --------------------------- */
+
+@media screen and (max-width : 650px) {
+
+	/*---General---*/
+
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		width:100%;
+	}
+
+	h1 { font-size: 1.5em; }
+
+	#intro { padding-top: 0; }
+
+	/*---Header---*/
+
+	#header-img div { position: absolute; }
+
+	#header-img{ padding-top: 75px; }
+
+	#logo {
+		width: 100px;
+		float: none;
+		position: absolute;
+		left: 50%;
+		margin: 0 auto;
+		margin-left: -50px;
+		z-index: 1000;
+
+	}
+	#nav {
+		width: 100%;
+		margin: 0 auto 0;
+		text-align: center;
+		position: relative;
+		float: none;
+	}
+	#nav li {
+		list-style: none;
+		float: none;
+		margin: 150px 0 0;
+		display: inline-block;
+	}
+	#nav ul {
+		list-style: none;
+		float: none;
+		margin: 150px 0;
+	}
+	#nav ul li {
+		padding-top: 12px;
+		margin-right: 0px;
+		padding-left: 20%;
+		width: 6em;
+	}
+	#nav ul.about { padding-top: 10px; }
+
+	#nav li ul li {
+		float: none;
+		padding: 3px;
+		margin: 0px;
+	}
+
+	#nav li ul { width: 6em; }
+
+	li a { color: #878787;}
+
+	li.faq { padding-right: 0px;}
+
+	li.about { padding-left: 10px;}
+
+	.contact {
+		color: #FFF;
+		text-align: center;
+		margin: 0;
+	}
+
+	li.our_team { margin-right: 0px; }
+
+	li.our_team a { margin: 0px; }
+
+	#contact_div {
+		display: inline-flex;
+		width: 100%;
+		margin: 20px 0;
+		right: 0;
+	}
+	.contact.btn {
+		margin-bottom: 20px;
+		color: #FFF;
+		width: 100%;
+	}
+	.list {
+ 		padding-top: 0; 
+ 		padding-left: 7px;
+ 	}
+ 	#nav li.facebook {
+ 		margin-bottom: -7px;
+ 	}
+
+	/*---Buttons---*/
+
+
+	menu, ol, ul { padding: 0 0 0 0; }
+
+	.btn-contact a, .btn-contact {
+		padding: 10px 0%;
+		background-color: #ff6347;
+		border-radius: 0px;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		text-transform: uppercase;
+		width: 100%;
+		margin: 0 auto 20px;
+		position: absolute;
+		}
+
+	/*---Content---*/
+
+	#intro {
+		width: 90%;
+		text-align: center;		
+		color: #444444;
+		margin: 0 auto 30px;
+		float: none;
+	}
+
+	#intro a { display: none; }
+
+	#content_logos div {
+		float: none;
+		margin: 20% auto;
+	}
+	#group_walks {
+		height: 200px;
+		width: 200px;
+		margin: 10%;
+	}
+	#puppy_visits {
+		height: 200px;
+		width: 200px;
+		margin: 10%;
+	}
+	#boarding {
+		height: 200px;
+		width: 200px;
+		margin: 10%;
+	}
+	#featured-cupcake, #new-cupcakes { margin: 5% 0; }
+
+
+	/*Our Team Page*/
+
+	h2.dark_title { text-align: center; }
+
+	.dan_img { width:100%; }
+
+	#left {
+		float: none;
+		max-width: 100%;
+		width: 100%;
+	}
+	#right {
+		float: none;
+		max-width: 100%;
+		width: 100%;
+	}
+	.dan_img img {
+		padding: 0%;
+		margin: 0 auto;
+		display: block;
+	}
+	.danielle_text p {
+		display: block;
+		text-align: left;
+		margin: 0 10% 30px;
+		font-size: .75em;
+	}
+	.kimmy_img img {
+		padding: 0%;
+		margin: 0 auto;
+		display: block;
+	}
+	.kimmy_text p {
+		display: block;
+		text-align: left;
+		margin: 0 10% 30px;
+		font-size: .75em;
+	}
+
+	#title { margin: 30px auto 30px;}
+
+	/*Services Page*/
+
+	#circle_logos div {
+		float: none;
+		margin: 10% auto;
+	}
+
+	#group_txt h1, #group_txt h3 {
+		margin: 30px auto 0;
+		display: block;
+		width: 90%;
+		text-align: center;
+	}
+	.logo_holder { width: 50%; }
+
+	/*Contact Page*/
+
+	#contact-area {	display: none; }
+
+	#hidden_txt, h1 {
+		display: block;
+		font-size: 1.1em;
+		color: #878787;
+	}
+	#hidden_txt {
+		border-bottom: 1px solid #c6c6c6;
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 60px;
+	}
+
+	 /*About Page*/
+
+	.text {
+		width: 90%;
+		margin: 40px auto;
+	}
+	 .about_txt { text-align: center; }
+
+	.text h2 { font-size: 1.6em; }
+
+	.text p {
+		font-size: .9em;
+		color: #878787;
+	}
+
+	#about_logo { width: 50%; }
+
+} /*END OF SMALL SCREEN MEDIA QUERY*/

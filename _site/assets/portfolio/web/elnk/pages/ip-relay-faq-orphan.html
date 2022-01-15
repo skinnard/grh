@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+
+	
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Work+Sans:400,500" rel="stylesheet">
+
+	<!-- toolkit styles -->
+	<link rel="stylesheet" href="../assets/toolkit/styles/toolkit.css">
+	<!-- /toolkit styles -->
+
+
+      <link rel="icon" type="image/png" href="/assets/toolkit/images/Eastlink-Favicon_16x16.png" sizes="16x16">
+      <link rel="icon" type="image/png" href="/assets/toolkit/images/Eastlink-Favicon_32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="/assets/toolkit/images/Eastlink-Favicon_96x96.png" sizes="96x96">
+      <link rel="icon" type="image/png" href="/assets/toolkit/images/Eastlink-Favicon_120x120.png" sizes="120x120">
+      <link rel="icon" type="image/png" href="/assets/toolkit/images/Eastlink-Favicon_152x152.png" sizes="152x152">
+      <link rel="icon" type="image/png" href="/assets/toolkit/images/Eastlink-Favicon_167x167.png" sizes="167x167">
+      <link rel="icon" type="image/png" href="/assets/toolkit/images/Eastlink-Favicon_180x180.png" sizes="180x180">
+      <link rel="icon" type="image/png" href="/assets/toolkit/images/Eastlink-Favicon_310x310.png" sizes="310x310">
+</head>
+<body>
+
+
+
+	<!-- Search Modal -->
+<div id="search-modal" class="blueberry-overlay">
+<div class="close mobile">
+    <span class="text">Close </span><span class="icn material-icons">close</span>
+</div>
+    <div class="container">
+        <div class="logo">
+            <a href="/"><img src="../assets/toolkit/images/eastlink-logo-white.svg" alt="Easlink Logo"/></a>
+        </div>
+        <div class="close">
+            <span class="text">Close </span><span class="icn material-icons">close</span>
+        </div>
+        <form class="text-center">
+            <input type="text" name="search" aria-label="Search"></input>
+            <button type="submit">
+                <span class="icn material-icons search-icon">search</span>
+            </button>
+        </form>
+        <p class="text-center">
+            <span class="search-assist-title">Popular Searches:</span>
+            <a href="#" class="search-result">Internet Service</a>
+            /
+            <a href="#" class="search-result">Home Security</a>
+            /
+            <a href="#" class="search-result">Moving</a>
+            /
+            <a href="#" class="search-result">Understanding my bill</a>
+        </p>
+    </div>
+</div>
+<div id="postal-code-modal" class="blueberry-overlay modal__wrapper modal__wrapper--fixed">
+<div class="close mobile">
+    <span class="text">Close </span><span class="icn material-icons">close</span>
+</div>
+    <div class="container">
+        <div class="logo">
+            <a href="/"><img src="../assets/toolkit/images/eastlink-logo-white.svg" alt="Easlink Logo"/></a>
+        </div>
+        <div class="close">
+            <span class="text">Close </span><span class="icn material-icons">close</span>
+        </div>
+        <div class="modal__content">
+            <h4>Form Title</h4>
+            <p>Explanatory copy, introduction text</p>
+            <form class="modal__form">
+                <label for="postal-code">Enter your postal code</label>
+                <div>
+                    <input type="text" name="Postal Code" id="postal-code" maxlength="7">
+                    <a class="btn btn--post-code" href="#">Go<i class="btn__chevron"></i></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="menu-container">
+    <!-- Push Wrapper -->
+    <div class="mp-pusher" id="mp-pusher">
+        <!-- mp-menu -->
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <div class="el-toolbar-menu-mobile">
+                    <div>
+                        <span class="icn material-icons mp-back">close</span>
+                    </div>
+                    <div class="logo">
+                        <a href="/"><img src="../assets/toolkit/images/eastlink-logo-white.svg" alt="Easlink Logo"/></a>
+                    </div>
+                    <div class="search">
+                        <a href="#">
+                            <span class="icn material-icons search-icon">search</span>
+                        </a>
+                    </div>
+                </div>
+                <ul>
+                    <!-- SHOP MENU -->
+                    <li>
+                        <a class="icon icon-display" href="#">Shop<span class="icn material-icons pull-right">chevron_right</span>
+                        </a>
+                        <div class="mp-level">
+                            <ul class="submenu-title">
+                                <li>
+                                    <a class="mp-back" href="#">
+                                        <span class="icn material-icons text-right">chevron_left</span>Back</a>
+                                </li>
+                                <li class="pull-right">Shop</li>
+                            </ul>
+                            <ul>
+                                <li class="sm-menu">
+                                    <a class="icon icon-phone" href="#">Shop item<span class="icn material-icons pull-right">chevron_right</span>
+                                    </a>
+                                    <div class="mp-level level-3">
+                                        <ul class="submenu-title">
+                                            <li>
+                                                <a class="mp-back" href="#">
+                                                    <span class="icn material-icons text-right">chevron_left</span>Back</a>
+                                            </li>
+                                            <li class="pull-right">Shop</li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Shop item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shop item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shop item</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="sm-menu bottom">
+                                                <a href="#">FR</a>
+                                                |
+                                                <a href="#" class="location location-button"><img src="../assets/toolkit/images/map-marker-nav.svg" width="15" height="20" alt="Map Marker"/>Location</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sm-menu">
+                                    <a class="icon icon-phone" href="#">Shop item<span class="icn material-icons pull-right">chevron_right</span>
+                                    </a>
+                                    <div class="mp-level level-3">
+                                        <ul class="submenu-title">
+                                            <li>
+                                                <a class="mp-back" href="#">
+                                                    <span class="icn material-icons text-right">chevron_left</span>Back</a>
+                                            </li>
+                                            <li class="pull-right">Shop</li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Shop item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shop item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shop item</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="sm-menu bottom">
+                                                <a href="#">FR</a>
+                                                |
+                                                <a href="#" class="location location-button"><img src="../assets/toolkit/images/map-marker-nav.svg" width="15" height="20" alt="Map Marker"/>Location</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="sm-menu">
+                                    <a class="icon icon-phone" href="#">Shop item<span class="icn material-icons pull-right">chevron_right</span>
+                                    </a>
+                                    <div class="mp-level level-3">
+                                        <ul class="submenu-title">
+                                            <li>
+                                                <a class="mp-back" href="#">
+                                                    <span class="icn material-icons text-right">chevron_left</span>Back</a>
+                                            </li>
+                                            <li class="pull-right">Shop</li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Shop item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shop item</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Shop item</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li class="sm-menu bottom">
+                                                <a href="#">FR</a>
+                                                |
+                                                <a href="#" class="location location-button"><img src="../assets/toolkit/images/map-marker-nav.svg" width="15" height="20" alt="Map Marker"/>Location</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="sm-menu bottom">
+                                    <a href="#">FR</a>
+                                    |
+                                    <a href="#" class="location location-button"><img src="../assets/toolkit/images/map-marker-nav.svg" width="15" height="20" alt="Map Marker"/>Location</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--END SHOP MENU-->
+                    <!-- SUPPORT MENU -->
+                    <li>
+                        <a class="icon icon-display" href="#">Support<span class="icn material-icons pull-right">chevron_right</span>
+                        </a>
+
+                    </li>
+                    <!--END SUPPORT MENU-->
+                    <!-- MY EL MENU -->
+                    <li>
+                        <a class="icon icon-display" href="#">My Eastlink<span class="icn material-icons pull-right">chevron_right</span>
+                        </a>
+                    </li>
+                    <!--END MY EL MENU-->
+                    <li class="sm-menu">
+                        <a href="#">
+                            <span class="icn material-icons text-right">portrait</span>Access My Account</a>
+                        <a href="#">
+                            <span class="icn material-icons text-right">mail</span>Webmail</a>
+                    </li>
+                    <li class="sm-menu">
+                        <a href="#">About Eastlink</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Find a Store</a>
+                    </li>
+                    <li class="sm-menu bottom">
+                        <a href="#">FR</a>
+                        |
+                        <a href="#" class="location location-button"><img src="../assets/toolkit/images/map-marker-nav.svg" width="15" height="20" alt="Map Marker"/>Location</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /mp-menu -->
+        <div class="scroller">
+            <!-- this is for emulating position fixed of the el-menu -->
+            <div class="scroller-inner">
+                <!-- TOP el-menu DESKTOP -->
+                <div class="content clearfix">
+                    <div class="header">
+                        <div class="container-breakout">
+                            <div class="el-toolbar-menu">
+    <div class="container">
+        <div class="grid">
+            <div class="grid__12 grid__4--md">
+                <ul>
+                    <li>
+                        <a href="#" class="active">Personal</a>
+                    <li>
+                        <a href="#">Business</a>
+                    </li>
+                    <li>
+                        <a href="#">Community TV</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid__12 grid__8--md text-right">
+                <ul>
+                    <li>
+                        <a href="#">Find a Store</a>
+                    </li>
+                    <li>
+                        <a href="#">Webmail</a>
+                    </li>
+                    <li>
+                        <a href="#">Access My Account</a>
+                    </li>
+                    <li>
+                        <a href="#" class="location-button"><img src="../assets/toolkit/images/map-marker-nav.svg" width="20" height="25" alt="Map Marker"/>Location</a>
+                    </li>
+                    <li>
+                        <a href="#">FR</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+                            <div class="el-menu">
+    <div class="container">
+        <div class="mobile-menu">
+            <div class="hamburger" id="trigger">
+                <span class="icn material-icons" class="menu-trigger">menu</span>
+                <span class="title">MENU</span>
+            </div>
+            <div class="logo">
+                <a href="/"><img src="../assets/toolkit/images/eastlink-logo-white.svg" width="100" alt="Easlink Logo"/></a>
+            </div>
+            <div class="search">
+                <a href="#">
+                    <span class="icn material-icons search-icon">search</span>
+                    <span class="title">SEARCH</span>
+                </a>
+            </div>
+        </div>
+        <div class="main-menu">
+            <div class="grid">
+                <div class="grid__12 grid__10--xs">
+                    <div class="logo">
+                        <a href="/"><img src="../assets/toolkit/images/eastlink-logo-desktop.svg" alt="Easlink Logo"/></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#" class="main-item el-menu-shop">
+                                <span class="icn material-icons">arrow_drop_down</span>Shop</a>
+                            <ul class="submenu-desktop" style="display: none">
+                                <li>
+                                    <a href="#">Bundles</a><br/>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Internet</a><br/>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        TV</a><br/>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Wireless</a><br/>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Phone</a><br/>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Home Security</a><br/>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub Item</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="main-item el-menu-support">
+                                Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="main-item el-menu-my-el">
+                                My Eastlink</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__12 grid__2--xs text-right">
+                    <div class="search">
+                        <a href="#">
+                            <span class="icn material-icons search-icon">search</span>
+                            <span class="icn material-icons chev-down-icon">keyboard_arrow_down</span>
+                            <span class="text">Search</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+
+<h1 class="aria-hidden">Store Locator</h1>
+
+<div class="page-container no-bot-pad">
+
+    <h2>Eastlink IP Relay FAQ (Frequently Asked Questions)</h2>
+
+    <h4 class="bold">How to access Eastlink IP&nbsp;Relay</h4>
+    <ul class="chevron">
+        <li><a href="#">http://iprelay.eastlink.ca/</a> (IP to Voice) - English</li>
+        <li><a href="#">http://servicerelaisip.eastlink.ca/</a> (IP to Voice) - French</li>
+        <li>1-855-883-9514 (Voice to IP)</li>
+        <li>IP to IP calls are not supported</li>
+    </ul>
+</div>
+
+<div class="accordion__container">
+    <h3 class="accordion__main-title accordion__main-title--left">General Questions on IP Relay</h3>
+    <div class="accordion accordion--closed">
+        <a href="#" class="accordion__header">
+            <div class="accordion__header__icon__wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="cls-1" d="M30,4A26,26,0,1,1,4,30,26,26,0,0,1,30,4m0-4A30,30,0,1,0,60,30,30,30,0,0,0,30,0Z"/><line class="cls-2" x1="29.5" y1="13" x2="29.5" y2="47"/><line class="cls-2" x1="13" y1="30" x2="47" y2="30"/></svg>
+            </div>
+            <div class="accordion__header__wrapper">
+                <h3 class="accordion__title--small">What is Eastlink IP Relay</h3>
+            </div>
+          </a>
+          <div class="accordion__content--padded">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa rem ratione totam vero voluptatem laborum impedit ut, quibusdam incidunt, voluptates dolore labore, temporibus inventore quo ea eum magni adipisci?</p>
+        </div>
+    </div>
+    <div class="accordion accordion--closed">
+        <a href="#" class="accordion__header">
+            <div class="accordion__header__icon__wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="cls-1" d="M30,4A26,26,0,1,1,4,30,26,26,0,0,1,30,4m0-4A30,30,0,1,0,60,30,30,30,0,0,0,30,0Z"/><line class="cls-2" x1="29.5" y1="13" x2="29.5" y2="47"/><line class="cls-2" x1="13" y1="30" x2="47" y2="30"/></svg>
+            </div>
+            <div class="accordion__header__wrapper">
+                <h3 class="accordion__title--small">Eastlink IP Relay Calls</h3>
+            </div>
+          </a>
+          <div class="accordion__content--padded">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa rem ratione totam vero voluptatem laborum impedit ut, quibusdam incidunt, voluptates dolore labore, temporibus inventore quo ea eum magni adipisci?</p>
+        </div>
+    </div>
+    <div class="accordion accordion--closed">
+        <a href="#" class="accordion__header">
+            <div class="accordion__header__icon__wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="cls-1" d="M30,4A26,26,0,1,1,4,30,26,26,0,0,1,30,4m0-4A30,30,0,1,0,60,30,30,30,0,0,0,30,0Z"/><line class="cls-2" x1="29.5" y1="13" x2="29.5" y2="47"/><line class="cls-2" x1="13" y1="30" x2="47" y2="30"/></svg>
+            </div>
+            <div class="accordion__header__wrapper">
+                <h3 class="accordion__title--small">Eastlink Customer Questions</h3>
+            </div>
+          </a>
+          <div class="accordion__content--padded">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa rem ratione totam vero voluptatem laborum impedit ut, quibusdam incidunt, voluptates dolore labore, temporibus inventore quo ea eum magni adipisci?</p>
+        </div>
+    </div>
+    <div class="accordion accordion--closed">
+        <a href="#" class="accordion__header">
+            <div class="accordion__header__icon__wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="cls-1" d="M30,4A26,26,0,1,1,4,30,26,26,0,0,1,30,4m0-4A30,30,0,1,0,60,30,30,30,0,0,0,30,0Z"/><line class="cls-2" x1="29.5" y1="13" x2="29.5" y2="47"/><line class="cls-2" x1="13" y1="30" x2="47" y2="30"/></svg>
+            </div>
+            <div class="accordion__header__wrapper">
+                <h3 class="accordion__title--small">Why is my IP Relay Number 9 digits?</h3>
+            </div>
+          </a>
+          <div class="accordion__content--padded">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa rem ratione totam vero voluptatem laborum impedit ut, quibusdam incidunt, voluptates dolore labore, temporibus inventore quo ea eum magni adipisci?</p>
+        </div>
+    </div>
+    <div class="accordion accordion--closed">
+        <a href="#" class="accordion__header">
+            <div class="accordion__header__icon__wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="cls-1" d="M30,4A26,26,0,1,1,4,30,26,26,0,0,1,30,4m0-4A30,30,0,1,0,60,30,30,30,0,0,0,30,0Z"/><line class="cls-2" x1="29.5" y1="13" x2="29.5" y2="47"/><line class="cls-2" x1="13" y1="30" x2="47" y2="30"/></svg>
+            </div>
+            <div class="accordion__header__wrapper">
+                <h3 class="accordion__title--small">How do voice callers reach me?</h3>
+            </div>
+          </a>
+          <div class="accordion__content--padded">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa rem ratione totam vero voluptatem laborum impedit ut, quibusdam incidunt, voluptates dolore labore, temporibus inventore quo ea eum magni adipisci?</p>
+        </div>
+    </div>
+    <div class="accordion accordion--closed">
+        <a href="#" class="accordion__header">
+            <div class="accordion__header__icon__wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="cls-1" d="M30,4A26,26,0,1,1,4,30,26,26,0,0,1,30,4m0-4A30,30,0,1,0,60,30,30,30,0,0,0,30,0Z"/><line class="cls-2" x1="29.5" y1="13" x2="29.5" y2="47"/><line class="cls-2" x1="13" y1="30" x2="47" y2="30"/></svg>
+            </div>
+            <div class="accordion__header__wrapper">
+                <h3 class="accordion__title--small">What happens if I'm not logged onto the Eastlink IP Relay web page or choose to ignore an incoming voice call?</h3>
+            </div>
+          </a>
+          <div class="accordion__content--padded">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa rem ratione totam vero voluptatem laborum impedit ut, quibusdam incidunt, voluptates dolore labore, temporibus inventore quo ea eum magni adipisci?</p>
+        </div>
+    </div>
+    <div class="accordion accordion--closed">
+        <a href="#" class="accordion__header">
+            <div class="accordion__header__icon__wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="cls-1" d="M30,4A26,26,0,1,1,4,30,26,26,0,0,1,30,4m0-4A30,30,0,1,0,60,30,30,30,0,0,0,30,0Z"/><line class="cls-2" x1="29.5" y1="13" x2="29.5" y2="47"/><line class="cls-2" x1="13" y1="30" x2="47" y2="30"/></svg>
+            </div>
+            <div class="accordion__header__wrapper">
+                <h3 class="accordion__title--small">Who can get a nine-digit number?</h3>
+            </div>
+          </a>
+          <div class="accordion__content--padded">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa rem ratione totam vero voluptatem laborum impedit ut, quibusdam incidunt, voluptates dolore labore, temporibus inventore quo ea eum magni adipisci?</p>
+        </div>
+    </div>
+    <div class="accordion accordion--closed">
+        <a href="#" class="accordion__header">
+            <div class="accordion__header__icon__wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="cls-1" d="M30,4A26,26,0,1,1,4,30,26,26,0,0,1,30,4m0-4A30,30,0,1,0,60,30,30,30,0,0,0,30,0Z"/><line class="cls-2" x1="29.5" y1="13" x2="29.5" y2="47"/><line class="cls-2" x1="13" y1="30" x2="47" y2="30"/></svg>
+            </div>
+            <div class="accordion__header__wrapper">
+                <h3 class="accordion__title--small">Is this service offered in French?</h3>
+            </div>
+          </a>
+          <div class="accordion__content--padded">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa rem ratione totam vero voluptatem laborum impedit ut, quibusdam incidunt, voluptates dolore labore, temporibus inventore quo ea eum magni adipisci?</p>
+        </div>
+    </div>
+    <div class="accordion accordion--closed">
+        <a href="#" class="accordion__header">
+            <div class="accordion__header__icon__wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="cls-1" d="M30,4A26,26,0,1,1,4,30,26,26,0,0,1,30,4m0-4A30,30,0,1,0,60,30,30,30,0,0,0,30,0Z"/><line class="cls-2" x1="29.5" y1="13" x2="29.5" y2="47"/><line class="cls-2" x1="13" y1="30" x2="47" y2="30"/></svg>
+            </div>
+            <div class="accordion__header__wrapper">
+                <h3 class="accordion__title--small">Can I dial emergency services using Eastlink IP Relay?</h3>
+            </div>
+          </a>
+          <div class="accordion__content--padded">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa rem ratione totam vero voluptatem laborum impedit ut, quibusdam incidunt, voluptates dolore labore, temporibus inventore quo ea eum magni adipisci?</p>
+        </div>
+    </div>
+    <div class="accordion accordion--closed">
+        <a href="#" class="accordion__header">
+            <div class="accordion__header__icon__wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="cls-1" d="M30,4A26,26,0,1,1,4,30,26,26,0,0,1,30,4m0-4A30,30,0,1,0,60,30,30,30,0,0,0,30,0Z"/><line class="cls-2" x1="29.5" y1="13" x2="29.5" y2="47"/><line class="cls-2" x1="13" y1="30" x2="47" y2="30"/></svg>
+            </div>
+            <div class="accordion__header__wrapper">
+                <h3 class="accordion__title--small">What would happen if I was disconnected from the operator during an Emergency call?</h3>
+            </div>
+          </a>
+          <div class="accordion__content--padded">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa rem ratione totam vero voluptatem laborum impedit ut, quibusdam incidunt, voluptates dolore labore, temporibus inventore quo ea eum magni adipisci?</p>
+        </div>
+    </div>
+    <div class="accordion accordion--closed">
+        <a href="#" class="accordion__header">
+            <div class="accordion__header__icon__wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="cls-1" d="M30,4A26,26,0,1,1,4,30,26,26,0,0,1,30,4m0-4A30,30,0,1,0,60,30,30,30,0,0,0,30,0Z"/><line class="cls-2" x1="29.5" y1="13" x2="29.5" y2="47"/><line class="cls-2" x1="13" y1="30" x2="47" y2="30"/></svg>
+            </div>
+            <div class="accordion__header__wrapper">
+                <h3 class="accordion__title--small">What information should I provide when I call Emergency Services?</h3>
+            </div>
+          </a>
+          <div class="accordion__content--padded">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat culpa rem ratione totam vero voluptatem laborum impedit ut, quibusdam incidunt, voluptates dolore labore, temporibus inventore quo ea eum magni adipisci?</p>
+        </div>
+    </div>
+ </div>
+
+<div class="el-footer container-breakout grey-700">
+    <div class="container text-center">
+      <div class="el-footer-nav">
+        <ul class="text-center">
+          <li><a href="#">About Eastlink</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">News Releases</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <img src="../assets/toolkit/images/best-managed-companies.svg" class="bmc" alt="Canada's Best Managed Companies Platinum member">
+      <hr>
+      <div class="el-footer-social">
+        <p class="text-center">Connect with Us</p>
+        <a href="https://www.facebook.com/EastLink/" aria-label="Facebook">
+          <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 34.5 34.5" style="enable-background:new 0 0 34.5 34.5;" xml:space="preserve" alt="Facebook">
+          <path class="stfb" d="M17.4,0.3c-9.4,0-17,7.6-17,17c0,9.4,7.6,17,17,17c9.4,0,17-7.6,17-17C34.4,7.9,26.8,0.3,17.4,0.3z M21.2,14.5
+          	L21,17h-2.6v8.8h-3.3V17h-1.8v-2.5h1.8v-1.7c0-0.8,0-1.9,0.6-2.6c0.6-0.8,1.4-1.3,2.7-1.3c2.2,0,3.2,0.3,3.2,0.3l-0.4,2.6
+          	c0,0-0.7-0.2-1.4-0.2c-0.7,0-1.3,0.2-1.3,0.9v2H21.2z"/>
+          </svg>
+
+        </a>
+        <a href="http://www.twitter.com/eastlink" aria-label="Twitter">
+          <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 34.5 34.5" style="enable-background:new 0 0 34.5 34.5;" xml:space="preserve" alt="Twitter">
+             <path class="sttw" d="M17.4,0.3c-9.4,0-17,7.6-17,17c0,9.4,7.6,17,17,17c9.4,0,17-7.6,17-17C34.4,7.9,26.8,0.3,17.4,0.3z M24.2,14.7
+             	c0,0.1,0,0.3,0,0.5c0,4.6-3.5,9.9-9.9,9.9c-2,0-3.8-0.6-5.4-1.6c0.3,0,0.6,0,0.8,0c1.6,0,3.1-0.6,4.3-1.5c-1.5,0-2.8-1-3.3-2.4
+             	c0.2,0,0.4,0.1,0.7,0.1c0.3,0,0.6,0,0.9-0.1c-1.6-0.3-2.8-1.7-2.8-3.4v0c0.5,0.3,1,0.4,1.6,0.4c-0.9-0.6-1.6-1.7-1.6-2.9
+             	c0-0.6,0.2-1.2,0.5-1.8c1.7,2.1,4.3,3.5,7.2,3.7c-0.1-0.3-0.1-0.5-0.1-0.8c0-1.9,1.6-3.5,3.5-3.5c1,0,1.9,0.4,2.6,1.1
+             	c0.8-0.2,1.5-0.4,2.2-0.8c-0.3,0.8-0.8,1.5-1.5,1.9c0.7-0.1,1.4-0.3,2-0.6C25.5,13.6,24.9,14.2,24.2,14.7z"/>
+          </svg>
+
+        </a>
+        <a href="https://www.instagram.com/eastlinkca/" aria-label="Instagram">
+          <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 34.5 34.5" style="enable-background:new 0 0 34.5 34.5;" xml:space="preserve" alt="Instagram">
+             <path class="stin" d="M17.5,20.3c1.7,0,3-1.3,3-3c0-0.7-0.2-1.3-0.6-1.7c-0.5-0.8-1.4-1.2-2.4-1.2c-1,0-1.9,0.5-2.4,1.2
+           		c-0.4,0.5-0.6,1.1-0.6,1.7C14.5,19,15.9,20.3,17.5,20.3z"/>
+           	<polygon class="stin" points="24,13.7 24,11.2 24,10.8 23.7,10.8 21.2,10.8 21.2,13.7 	"/>
+           	<path class="stin" d="M22.2,17.3c0,2.6-2.1,4.7-4.7,4.7c-2.6,0-4.7-2.1-4.7-4.7c0-0.6,0.1-1.2,0.3-1.7h-2.5v7c0,0.9,0.7,1.6,1.6,1.6
+           		h10.4c0.9,0,1.6-0.7,1.6-1.6v-7h-2.5C22,16.1,22.2,16.7,22.2,17.3z"/>
+           	<path class="stin" d="M17.5,0.3c-9.4,0-17,7.6-17,17c0,9.4,7.6,17,17,17c9.4,0,17-7.6,17-17C34.5,7.9,26.9,0.3,17.5,0.3z M26,15.6v7
+           		c0,1.8-1.5,3.3-3.3,3.3H12.3c-1.8,0-3.3-1.5-3.3-3.3v-7v-3.5c0-1.8,1.5-3.3,3.3-3.3h10.4c1.8,0,3.3,1.5,3.3,3.3V15.6z"/>
+          </svg>
+
+        </a>
+        <a href="https://www.youtube.com/user/myEastLink" aria-label="YoutTube">
+          <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 34.5 34.5" style="enable-background:new 0 0 34.5 34.5;" xml:space="preserve" alt="YouTube">
+             	<polygon class="styt" points="15.3,20.6 20.8,17.4 15.3,14.1 	"/>
+             <path class="styt" d="M17.5,0.3c-9.4,0-17,7.6-17,17c0,9.4,7.6,17,17,17c9.4,0,17-7.6,17-17C34.5,7.9,26.9,0.3,17.5,0.3z M26,20.4
+           		c0,2.9-2.9,2.9-2.9,2.9H12C9,23.3,9,20.4,9,20.4v-6.1c0-2.9,2.9-2.9,2.9-2.9h11.1c2.9,0,2.9,2.9,2.9,2.9V20.4z"/>
+          </svg>
+
+        </a>
+        <a href="https://www.linkedin.com/company/eastlink" aria-label="LinkedIn">
+          <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 34.5 34.5" style="enable-background:new 0 0 34.5 34.5;" xml:space="preserve" alt="LinkedIn">
+             <path class="stli" d="M17.5,0.3c-9.4,0-17,7.6-17,17c0,9.4,7.6,17,17,17c9.4,0,17-7.6,17-17C34.6,7.9,26.9,0.3,17.5,0.3z M12.8,24.5
+             	H9.5V13.8h3.3V24.5z M11,12.5L11,12.5c-1.2,0-2-0.8-2-1.8c0-1,0.8-1.8,2-1.8c1.2,0,2,0.8,2,1.8C13.1,11.7,12.3,12.5,11,12.5z
+             	 M26,24.5h-3.8V19c0-1.4-0.6-2.4-1.9-2.4c-1,0-1.5,0.7-1.8,1.3c-0.1,0.2-0.1,0.5-0.1,0.9v5.7h-3.7c0,0,0-9.7,0-10.6h3.7v1.7
+             	c0.2-0.7,1.4-1.8,3.3-1.8c2.4,0,4.2,1.5,4.2,4.8V24.5z"/>
+          </svg>
+
+        </a>
+      </div>
+
+    </div>
+    <div class="white container-breakout">
+      <div class="el-footer-legal text-center">
+        <a href="#">Accessibility Services</a> | <a href="#">Legal &amp; Regulatory</a><br />
+        &copy; Eastlink 2017
+      </div>
+    </div>
+  </div>
+
+
+
+
+	<!-- toolkit scripts -->
+  <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../assets/js/modernizr.js"></script>
+  <script type="text/javascript" src="../assets/js/popper.js"></script>
+  <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="../assets/js/MultiLevelPushMenu/classie.js"></script>
+  <script type="text/javascript" src="../assets/js/MultiLevelPushMenu/mlpushmenu.js"></script>
+  <script type="text/javascript" src="../assets/js/MultiLevelPushMenu/modernizr.custom.js"></script>
+  <script type="text/javascript" src="../assets/js/responsive-menu.js"></script>
+
+  <script type="text/javascript" src="../assets/js/ElCarousel/carousel.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.sticky.js"></script>
+
+  <script type="text/javascript" src="../assets/js/home-security-packages.js"></script>
+  <script type="text/javascript" src="../assets/js/multitoggle.js"></script>
+  <script type="text/javascript" src="../assets/js/slider.js"></script>
+  <script type="text/javascript" src="../assets/js/sticky.js"></script>
+  <script type="text/javascript" src="../assets/js/datepicker.js"></script>
+
+  <script type="text/javascript" src="../assets/js/script.js"></script>
+
+	<script src="../assets/toolkit/scripts/toolkit.js"></script>
+	<!-- /toolkit scripts -->
+
+</body>
+</html>
