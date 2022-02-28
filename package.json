@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync",
   "dependencies": {
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "protagonist": "^2.2.1",
     "trash": "^6.1.1"
   }
